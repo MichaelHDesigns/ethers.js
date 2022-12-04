@@ -63,7 +63,7 @@ class Eip712Test extends abi_test_1.AbstractAbiTest {
             ].join(".");
         }
         if (this.randomChoice([false, true])) {
-            domain.chainId = this.randomInteger(0, 1337);
+            domain.chainId = this.randomInteger(0, 12345);
         }
         if (this.randomChoice([false, true])) {
             domain.verifyingContract = this.randomAddress();
